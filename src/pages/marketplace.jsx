@@ -21,7 +21,7 @@ const Marketplace = () => {
       <header className="market-hero">
         <div className="market-hero-inner">
           <h1>Marketplace</h1>
-          <p>Discover extensions and add-ons for Theseus.</p>
+          <p>Discover the lineup sold at Theseus.</p>
         </div>
       </header>
 

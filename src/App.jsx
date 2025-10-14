@@ -4,6 +4,7 @@ import Products from './pages/products';
 import Support from './pages/support';
 import About from './pages/about';
 import Marketplace from './pages/marketplace';
+import Demo from './pages/demo';
 
 export default function App() {
 	return (
@@ -14,6 +15,7 @@ export default function App() {
 			<Route path="/support" element={<Support />} />
 		<Route path="/about" element={<About />} />
 		<Route path="/marketplace" element={<Marketplace />} />
+		<Route path="/demo" element={<Demo />} />
 			</Routes>
 		</BrowserRouter>
 	);

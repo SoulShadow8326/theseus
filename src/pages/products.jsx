@@ -42,7 +42,7 @@ export default function Products() {
           hideLogo={true}
           hideHeaderToggle={true}
           colors={[ '#D1E3FF', '#2977f5' ]}
-          logoUrl="/src/assets/react.svg"
+          logoUrl="/src/assets/logo.png"
           accentColor="#DE3163"
         />
       </div>

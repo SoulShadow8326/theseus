@@ -78,7 +78,6 @@ const GooeyNav = ({
           try {
             element.removeChild(particle);
           } catch {
-            // Do nothing
           }
         }, t);
       }, 30);
