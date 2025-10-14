@@ -10,7 +10,7 @@ const items = [
 ];
 
 const menuItems = [
-  { label: 'MecHand', ariaLabel: 'Go to home page', link: '/' },
+  { label: 'A-001', ariaLabel: 'Go to home page', link: '/' },
   { label: 'Robot ABC', ariaLabel: 'Learn about us', link: '/about' },
   { label: 'Robot EGH', ariaLabel: 'View our services', link: '/services' },
   { label: 'Robot JKL', ariaLabel: 'Get in touch', link: '/contact' }
