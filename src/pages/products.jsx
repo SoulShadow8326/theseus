@@ -10,7 +10,7 @@ const items = [
 ];
 
 const menuItems = [
-  { label: 'Robot XYZ', ariaLabel: 'Go to home page', link: '/' },
+  { label: 'MecHand', ariaLabel: 'Go to home page', link: '/' },
   { label: 'Robot ABC', ariaLabel: 'Learn about us', link: '/about' },
   { label: 'Robot EGH', ariaLabel: 'View our services', link: '/services' },
   { label: 'Robot JKL', ariaLabel: 'Get in touch', link: '/contact' }
@@ -67,7 +67,9 @@ export default function Products() {
           </button>
         </div>
         <div className="hero-right">
-          <div className="hero-card" />
+          <div className="hero-card">
+            <img src="/src/assets/arm.png" alt="arm" />
+          </div>
         </div>
       </header>
     </div>

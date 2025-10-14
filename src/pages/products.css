@@ -9,4 +9,5 @@
 .cta-button{position:relative;z-index:60;pointer-events:auto}
 .hero-right{flex:1;display:grid;place-items:center}
 .hero-card{width:100%;max-width:560px;height:320px;border-radius:16px;background:linear-gradient(180deg,#0f0f10,rgba(0,0,0,0.2));display:block}
+.hero-card img{width:100%;height:100%;object-fit:contain;display:block;border-radius:16px}
 .staggered-wrapper-container{position:relative;z-index:9999}
