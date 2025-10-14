@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 import uvicorn
@@ -7,6 +7,7 @@ import os
 app = FastAPI()
 ROOT = os.path.dirname(__file__)
 DIST = os.path.join(ROOT, 'dist')
+PORT = 8080
 
 if os.path.isdir(DIST):
     app.mount('/static', StaticFiles(directory=DIST), name='static')
@@ -29,4 +30,4 @@ async def spa(path: str):
     return Response('Not found', status_code=404)
 
 if __name__ == '__main__':
-    uvicorn.run('main:app', host='0.0.0.0', port=8080, log_level='info')
+    uvicorn.run('main:app', host='0.0.0.0', port=PORT, log_level='info')
