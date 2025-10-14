@@ -7,7 +7,7 @@ import os
 app = FastAPI()
 ROOT = os.path.dirname(__file__)
 DIST = os.path.join(ROOT, 'dist')
-PORT = 8080
+PORT = int(os.environ.get('PORT', '8080'))
 
 if os.path.isdir(DIST):
     app.mount('/static', StaticFiles(directory=DIST), name='static')
