@@ -10,10 +10,10 @@ const items = [
 ];
 
 const menuItems = [
-  { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
-  { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
-  { label: 'Services', ariaLabel: 'View our services', link: '/services' },
-  { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
+  { label: 'Robot XYZ', ariaLabel: 'Go to home page', link: '/' },
+  { label: 'Robot ABC', ariaLabel: 'Learn about us', link: '/about' },
+  { label: 'Robot EGH', ariaLabel: 'View our services', link: '/services' },
+  { label: 'Robot JKL', ariaLabel: 'Get in touch', link: '/contact' }
 ];
 
 const socialItems = [

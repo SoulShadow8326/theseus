@@ -27,6 +27,11 @@
   pointer-events: auto;
 }
 
+.staggered-menu-wrapper[data-open] .staggered-menu-panel,
+.staggered-menu-wrapper[data-open] .sm-prelayer {
+  transform: translateX(0) !important;
+}
+
 .staggered-menu-header {
   position: absolute;
   top: 0;
@@ -187,6 +192,39 @@
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+.sm-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100000;
+}
+
+.sm-close svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  color: var(--sm-accent, #000);
+}
+
+.sm-close:focus-visible {
+  outline: 2px solid var(--sm-accent, #000);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+.sm-close:hover svg {
+  opacity: 0.9;
 }
 
 .sm-socials {

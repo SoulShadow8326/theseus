@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import './navbar.css';
 
 const GooeyNav = ({
@@ -17,6 +17,7 @@ const GooeyNav = ({
   const filterRef = useRef(null);
   const textRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(initialActiveIndex);
+  const location = useLocation();
 
   const noise = (n = 1) => n / 2 - Math.random() * n;
 
@@ -147,15 +148,23 @@ const GooeyNav = ({
     return () => resizeObserver.disconnect();
   }, [activeIndex]);
 
+  useEffect(() => {
+    if (!items || !items.length) return;
+    const idx = items.findIndex(it => it.href === location.pathname);
+    if (idx !== -1 && idx !== activeIndex) {
+      setActiveIndex(idx);
+    }
+  }, [location.pathname, items]);
+
   return (
     <div className="gooey-nav-container" ref={containerRef}>
       <nav className="nav-row">
         <ul ref={navRef} className="nav-list">
           {items.map((item, index) => (
             <li key={index} className={activeIndex === index ? 'active' : ''}>
-              <Link to={item.href} onClick={e => handleClick(e, index)} onKeyDown={e => handleKeyDown(e, index)}>
+              <NavLink to={item.href} onClick={e => handleClick(e, index)} onKeyDown={e => handleKeyDown(e, index)}>
                 {item.label}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>
