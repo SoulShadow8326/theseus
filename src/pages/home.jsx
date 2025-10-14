@@ -5,7 +5,7 @@ const items = [
 	{ label: 'Home', href: '/' },
 	{ label: 'Products', href: '/products' },
 	{ label: 'Support', href: '/support' },
-	{ label: 'About us', href: '/about' }
+	{ label: 'Marketplace', href: '/marketplace' }
 ];
 
 export default function Home() {
