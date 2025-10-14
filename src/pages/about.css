@@ -1,0 +1,15 @@
+.about-page { background: var(--bg); color: var(--text); min-height: 100vh }
+.about-hero { padding: 4rem 2rem; background: var(--bg) }
+.about-hero-inner { max-width: 1100px; margin: 0 auto; }
+.about-hero h1 { font-size: 4rem; margin: 0 0 0.75rem 0; text-align: center }
+.about-hero p { margin: 0; opacity: 0.85; text-align: center }
+.about-main { max-width: 1100px; margin: 2rem auto; position: relative }
+.about-cards { position: relative; min-height: 480px;}
+.about-cards > div { position: fixed; right: 0.75rem; bottom: 0.75rem; z-index: 30 }
+
+@media (max-width: 900px) {
+	.about-cards > div { position: static; right: auto; bottom: auto; margin: 2rem auto 0; display: block;}
+}
+.card-inner { padding: 1.25rem; color: var(--pink) }
+.card-inner h3 { margin: 0 0 0.6rem 0 }
+.card-inner p { margin: 0 }

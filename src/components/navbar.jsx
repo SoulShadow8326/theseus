@@ -18,6 +18,12 @@ const GooeyNav = ({
   const textRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(initialActiveIndex);
   const location = useLocation();
+  const navItems = items && items.length ? items : [
+    { label: 'Home', href: '/' },
+    { label: 'Products', href: '/products' },
+    { label: 'Support', href: '/support' },
+    { label: 'About us', href: '/about' }
+  ];
 
   const noise = (n = 1) => n / 2 - Math.random() * n;
 
@@ -149,18 +155,17 @@ const GooeyNav = ({
   }, [activeIndex]);
 
   useEffect(() => {
-    if (!items || !items.length) return;
-    const idx = items.findIndex(it => it.href === location.pathname);
+    const idx = navItems.findIndex(it => it.href === location.pathname);
     if (idx !== -1 && idx !== activeIndex) {
       setActiveIndex(idx);
     }
-  }, [location.pathname, items]);
+  }, [location.pathname, navItems]);
 
   return (
     <div className="gooey-nav-container" ref={containerRef}>
       <nav className="nav-row">
         <ul ref={navRef} className="nav-list">
-          {items.map((item, index) => (
+          {navItems.map((item, index) => (
             <li key={index} className={activeIndex === index ? 'active' : ''}>
               <NavLink to={item.href} onClick={e => handleClick(e, index)} onKeyDown={e => handleKeyDown(e, index)}>
                 {item.label}
