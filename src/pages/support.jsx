@@ -4,9 +4,9 @@ import SpotlightCard from '../components/SpotlightCard';
 import './support.css';
 
 const topics = [
-  { title: 'Spot', img: 'https://support.bostondynamics.com/sfsites/c/cms/delivery/media/MCZRMJFB235JGQRHA3NYCC5NJOSU', desc: 'Agile mobile robot for dynamic sensing' },
-  { title: 'Orbit', img: 'https://support.bostondynamics.com/sfsites/c/cms/delivery/media/MC5SE7Y5CPEVDBDCCPYYUBBSTZ7Y', desc: 'Manage your robot fleet, schedule' },
-  { title: 'Stretch', img: 'https://support.bostondynamics.com/sfsites/c/cms/delivery/media/MCG3HAVCMCYRCZ7HGJKEXP6QB6UM', desc: 'Case handling robot to streamline' }
+  { title: 'A-001', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png', desc: 'Agile mobile arm upgrade for dynamic and skillful movement' },
+  { title: 'Orbit', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png', desc: 'Manage your robot fleet, schedule' },
+  { title: 'Stretch', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png', desc: 'Case handling robot to streamline' }
 ];
 
 const Support = () => {
