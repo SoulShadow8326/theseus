@@ -1,47 +1,58 @@
 import React from 'react';
 import Nav from '../components/navbar';
-import CardSwap, { Card } from '../components/CardSwap';
+import '../index.css';
 import './about.css';
+import armSrc from '../assets/arm.png';
 
-const About = () => {
-  return (
-    <div className="about-page">
-      <Nav />
-      <header className="about-hero">
-        <div className="about-hero-inner">
-          <h1>About Theseus</h1>
-          <p>Building modern tools to help teams work better.</p>
-        </div>
-      </header>
+export default function About() {
+	return (
+		<div className="about-page">
+			<Nav />
+			<main className="about-main">
+				<h1 className="about-title">Our Product</h1>
 
-      <main className="about-main">
-        <section className="about-cards">
-          <div style={{ height: '600px', position: 'relative'}}>
-            <CardSwap cardDistance={200} verticalDistance={100} delay={3000} pauseOnHover={true}>
-              <Card>
-                <div className="card-inner">
-                  <h3>Our Mission</h3>
-                  <p>We build delightful tools for teams.</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="card-inner">
-                  <h3>Our Team</h3>
-                  <p>Engineers and designers building at the intersection of web and 3D.</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="card-inner">
-                  <h3>Our Values</h3>
-                  <p>Open, curious, and pragmatic.</p>
-                </div>
-              </Card>
-            </CardSwap>
-          </div>
-        </section>
-      </main>
-    </div>
-  );
-};
+				<section className="about-content">
+					<div className="panel left-panel">
+						<div className="panel-inner">
+							<p>
+								A cybernetic is <span className="accent">implanted</span> onto the user
+								and inside the cybernetic a new arm is grown.
+							</p>
+							<p>
+								This <span className="accent">arm will take data</span> from the user's
+								body (skin tone, arm length, etc.) and create a "biologically perfect"
+								arm inside the cybernetic one, an arm with near <span className="accent">superhuman efficiency</span>.
+							</p>
+						</div>
+					</div>
 
-export default About;
+					<div className="hand-card">
+						<div className="card-inner">
+							<div className="card-art">
+								<img src={armSrc} alt="MecHand" />
+							</div>
+							<div className="card-caption">
+								<h2>A-001</h2>
+								<p>Biotech Arm</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="panel right-panel">
+						<div className="panel-inner">
+							<p>
+								It connects directly to the user's <span className="accent">nerves</span> and
+								<span className="accent"> muscles</span>, with full strength, precision, and feedback.
+							</p>
+							<p>
+								Inside, the arm contains small channels and support structures that supply
+								<span className="accent"> nutrients, oxygen, and growth signals</span> to lab-grown
+								cells made from the user's <span className="accent">DNA</span>.
+							</p>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	);
+}
