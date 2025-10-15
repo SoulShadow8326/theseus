@@ -49,7 +49,7 @@ export default function Products() {
 
       <header className="products-hero">
         <div className="hero-left">
-          <h1>Your teammates, your tools. Meet Theseus Cybernetics.</h1>
+          <h1>Your teammates, your tools. Meet <span style={{ color: '#DE3163'}}>Theseus Cybernetics.</span></h1>
           <p>Our wide range of Cybernetics aim to help you enhance every aspect of living while retaining who you are.</p>
           <button
             className="cta-button sm-toggle"

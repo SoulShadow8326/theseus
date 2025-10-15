@@ -20,7 +20,7 @@ const Marketplace = () => {
       <Nav />
       <header className="market-hero">
         <div className="market-hero-inner">
-          <h1>Marketplace</h1>
+          <h1><span style={{ color: 'var(--pink)' }}>Marketplace</span></h1>
           <p>Discover the lineup sold at Theseus.</p>
         </div>
       </header>

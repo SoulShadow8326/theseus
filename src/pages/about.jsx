@@ -9,7 +9,7 @@ export default function About() {
 		<div className="about-page">
 			<Nav />
 			<main className="about-main">
-				<h1 className="about-title">Our Product</h1>
+				<h1 className="about-title">Our <span style={{ color: 'var(--pink)' }}>Product</span></h1>
 
 				<section className="about-content">
 					<div className="panel left-panel">
