@@ -68,7 +68,7 @@ export default function Products() {
         </div>
         <div className="hero-right">
           <div className="hero-card">
-            <img src="/src/assets/arm.png" alt="arm" />
+            <img src="https://github.com/SoulShadow8326/theseus/blob/main/src/assets/arm.png?raw=true" alt="arm" />
           </div>
         </div>
       </header>
