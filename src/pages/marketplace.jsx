@@ -3,15 +3,15 @@ import Nav from '../components/navbar';
 import './marketplace.css';
 
 const products = [
-  { title: 'Theseus Core', price: '$49/mo', desc: 'Core collaboration tools', img: 'https://exunclan.com/_next/image?url=%2Flogo.png&w=384&q=75' },
-  { title: 'Theseus Analytics', price: '$99/mo', desc: 'Usage insights and dashboards', img: 'https://exunclan.com/_next/image?url=%2Flogo.png&w=384&q=75' },
-  { title: 'Theseus Integrations', price: '$149/mo', desc: 'Connect to your stack', img: 'https://exunclan.com/_next/image?url=%2Flogo.png&w=384&q=75' },
-  { title: 'Theseus Core', price: '$49/mo', desc: 'Core collaboration tools', img: 'https://exunclan.com/_next/image?url=%2Flogo.png&w=384&q=75' },
-  { title: 'Theseus Analytics', price: '$99/mo', desc: 'Usage insights and dashboards', img: 'https://exunclan.com/_next/image?url=%2Flogo.png&w=384&q=75' },
-  { title: 'Theseus Integrations', price: '$149/mo', desc: 'Connect to your stack', img: 'https://exunclan.com/_next/image?url=%2Flogo.png&w=384&q=75' },
-  { title: 'Theseus Core', price: '$49/mo', desc: 'Core collaboration tools', img: 'https://exunclan.com/_next/image?url=%2Flogo.png&w=384&q=75' },
-  { title: 'Theseus Analytics', price: '$99/mo', desc: 'Usage insights and dashboards', img: 'https://exunclan.com/_next/image?url=%2Flogo.png&w=384&q=75' },
-  { title: 'Theseus Integrations', price: '$149/mo', desc: 'Connect to your stack', img: 'https://exunclan.com/_next/image?url=%2Flogo.png&w=384&q=75' },
+  { title: 'Theseus Core', price: '$49/mo', desc: 'Core collaboration tools', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png' },
+  { title: 'Theseus Analytics', price: '$99/mo', desc: 'Usage insights and dashboards', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png' },
+  { title: 'Theseus Integrations', price: '$149/mo', desc: 'Connect to your stack', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png' },
+  { title: 'Theseus Core', price: '$49/mo', desc: 'Core collaboration tools', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png' },
+  { title: 'Theseus Analytics', price: '$99/mo', desc: 'Usage insights and dashboards', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png' },
+  { title: 'Theseus Integrations', price: '$149/mo', desc: 'Connect to your stack', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png' },
+  { title: 'Theseus Core', price: '$49/mo', desc: 'Core collaboration tools', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png' },
+  { title: 'Theseus Analytics', price: '$99/mo', desc: 'Usage insights and dashboards', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png' },
+  { title: 'Theseus Integrations', price: '$149/mo', desc: 'Connect to your stack', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png' },
 ];
 
 const Marketplace = () => {
