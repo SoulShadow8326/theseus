@@ -5,6 +5,7 @@ import Support from './pages/support';
 import About from './pages/about';
 import Marketplace from './pages/marketplace';
 import Demo from './pages/demo';
+import Auth from './pages/auth';
 
 export default function App() {
 	return (
@@ -16,6 +17,7 @@ export default function App() {
 		<Route path="/about" element={<About />} />
 		<Route path="/marketplace" element={<Marketplace />} />
 		<Route path="/demo" element={<Demo />} />
+		<Route path="/auth" element={<Auth />} />
 			</Routes>
 		</BrowserRouter>
 	);

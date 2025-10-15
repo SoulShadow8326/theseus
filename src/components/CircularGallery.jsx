@@ -334,17 +334,17 @@ class App {
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
       { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
+      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
       { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
+      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
       { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
+      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
       { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
+      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
       { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
+      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
       { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
+      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
