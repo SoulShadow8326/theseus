@@ -3,13 +3,6 @@ import StaggeredMenu from '../components/StaggeredMenu';
 import './products.css';
 import armImg from '../assets/arm.png';
 
-const items = [
-  { label: 'Home', href: '/' },
-  { label: 'Products', href: '/products' },
-  { label: 'Support', href: '/support' },
-  { label: 'Marketplace', href: '/marketplace' }
-];
-
 const menuItems = [
   { label: 'A-001', ariaLabel: 'Go to home page', link: '/about' },
   { label: 'Robot ABC', ariaLabel: 'Learn about us', link: '/about' },
@@ -27,7 +20,7 @@ export default function Products() {
   return (
     <div className="products-page">
       <div style={{ height: '120px' }}>
-        <Nav items={items} />
+        <Nav />
       </div>
       <div className="staggered-wrapper-container">
         <StaggeredMenu

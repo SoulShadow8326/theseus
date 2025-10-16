@@ -54,7 +54,7 @@
 .card-inner {
 	width: 540px;
 	height: 420px;
-	background: linear-gradient(#b23559, #b23559);;
+	background: linear-gradient(var(--pink), #b23559);;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

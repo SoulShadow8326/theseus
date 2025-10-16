@@ -22,7 +22,8 @@ const GooeyNav = ({
     { label: 'Home', href: '/' },
     { label: 'Products', href: '/products' },
     { label: 'Support', href: '/support' },
-    { label: 'Marketplace', href: '/marketplace' }
+    { label: 'Marketplace', href: '/marketplace' },
+    { label: 'Demo', href: '/demo' }
   ];
 
   const noise = (n = 1) => n / 2 - Math.random() * n;

@@ -49,6 +49,9 @@ const Marketplace = () => {
             <h1><span style={{ color: 'var(--pink)' }}>Marketplace</span></h1>
             <button className="cart-button" aria-label="Cart" onClick={() => cartCount > 0 && navigate('/checkout')} disabled={cartCount === 0}>Cart {cartCount > 0 ? `(${cartCount})` : ''}</button>
           </div>
+          <div className="visualize-line">
+            <span className="visualize-link" role="link" tabIndex={0} onClick={() => navigate('/demo')} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') navigate('/demo') }}>Unsure? Visualize our product here</span>
+          </div>
         </div>
       </header>
 

@@ -3,6 +3,8 @@ import { useEffect, useRef } from 'react';
 import armImg from '../assets/arm.png';
 import logoImg from '../assets/logo.png';
 import revImg from '../assets/rev_logo.png';
+import blackImg from '../assets/black_arm.png';
+import whiteImg from '../assets/white_arm.png';
 import './CircularGallery.css';
 
 function debounce(func, wait) {
@@ -336,6 +338,8 @@ class App {
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
       { image: armImg, text: 'A-001' },
+      { image: blackImg, text: '' },
+      { image: logoImg, text: '' },
       { image: logoImg, text: '' },
       { image: revImg, text: '' },
       { image: logoImg, text: '' },
@@ -343,10 +347,8 @@ class App {
       { image: logoImg, text: '' },
       { image: revImg, text: '' },
       { image: logoImg, text: '' },
-      { image: revImg, text: '' },
       { image: logoImg, text: '' },
-      { image: revImg, text: '' },
-      { image: logoImg, text: '' },
+      { image: whiteImg, text: '' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
