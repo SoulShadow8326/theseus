@@ -7,6 +7,7 @@ import Marketplace from './pages/marketplace';
 import Demo from './pages/demo';
 import Auth from './pages/auth';
 import Checkout from './pages/checkout';
+import Orders from './pages/orders';
 
 export default function App() {
 	return (
@@ -19,7 +20,8 @@ export default function App() {
 		<Route path="/marketplace" element={<Marketplace />} />
 		<Route path="/demo" element={<Demo />} />
 		<Route path="/auth" element={<Auth />} />
-		<Route path="/checkout" element={<Checkout />} />
+			<Route path="/checkout" element={<Checkout />} />
+			<Route path="/orders" element={<Orders />} />
 			</Routes>
 		</BrowserRouter>
 	);
