@@ -5,14 +5,14 @@
 .market-hero p { margin: 0 auto; opacity: 0.85; max-width: 720px }
 .market-main { max-width: 1100px; margin: 3rem auto }
 .product-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; align-items: start }
-.product-card { background: #fbeeee; color: var(--bg); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.18); transition: transform 0.25s ease, box-shadow 0.25s ease; border: 3px solid var(--blue); }
+.product-card { background: var(--pink); color: var(--bg); border-radius: 0px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.18); transition: transform 0.25s ease, box-shadow 0.25s ease; }
 .product-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,0.25) }
 .product-media { height: 220px; background: #f4f4f6; display:flex; align-items:center; justify-content:center }
 .product-media img{ width:100%; height:100%; object-fit:cover; display:block }
 .product-body { padding: 1.25rem 1.5rem }
-.product-body h3 { margin: 0 0 0.5rem 0; color: var(--pink) !important; }
-.product-desc { margin: 0 0 1rem 0; color: rgba(0,0,0,0.65) }
-.product-price { font-weight:700 }
+.product-body h3 { margin: 0 0 0.5rem 0; color: var(--text) !important; font-weight: 800 !important; font-family: Satoshi;}
+.product-desc { margin: 0 0 1rem 0; color: rgba(0,0,0,0.65); font-weight: 800;}
+.product-price { font-weight:800 }
 
 @media (max-width: 900px) {
   .product-grid { grid-template-columns: repeat(1, 1fr) }

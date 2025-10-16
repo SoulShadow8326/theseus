@@ -1,6 +1,7 @@
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl';
 import { useEffect, useRef } from 'react';
-
+import armImg from '../assets/arm.png';
+import logoImg from '../assets/logo.png';
 import './CircularGallery.css';
 
 function debounce(func, wait) {
@@ -333,18 +334,18 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png`, text: 'Arm' },
-      { image: `https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/logo.png`, text: 'Arm' },
+      { image: armImg, text: 'Arm' },
+      { image: logoImg, text: 'Arm' },
+      { image: armImg, text: 'Arm' },
+      { image: logoImg, text: 'Arm' },
+      { image: armImg, text: 'Arm' },
+      { image: logoImg, text: 'Arm' },
+      { image: armImg, text: 'Arm' },
+      { image: logoImg, text: 'Arm' },
+      { image: armImg, text: 'Arm' },
+      { image: logoImg, text: 'Arm' },
+      { image: armImg, text: 'Arm' },
+      { image: logoImg, text: 'Arm' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);

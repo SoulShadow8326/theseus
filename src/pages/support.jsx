@@ -2,11 +2,11 @@ import React from 'react';
 import Nav from '../components/navbar';
 import SpotlightCard from '../components/SpotlightCard';
 import './support.css';
-
+import armImg from '../assets/arm.png';
 const topics = [
-  { title: 'A-001', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png', desc: 'Agile mobile arm upgrade for dynamic and skillful movement' },
-  { title: 'Orbit', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png', desc: 'Manage your robot fleet, schedule' },
-  { title: 'Stretch', img: 'https://raw.githubusercontent.com/SoulShadow8326/theseus/refs/heads/main/src/assets/arm.png', desc: 'Case handling robot to streamline' }
+  { title: 'A-001', img: armImg, desc: 'Agile mobile arm upgrade for dynamic and skillful movement' },
+  { title: 'Orbit', img: armImg, desc: 'Manage your robot fleet, schedule' },
+  { title: 'Stretch', img: armImg, desc: 'Case handling robot to streamline' }
 ];
 
 const Support = () => {

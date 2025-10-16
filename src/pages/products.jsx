@@ -1,6 +1,7 @@
 import Nav from '../components/navbar';
 import StaggeredMenu from '../components/StaggeredMenu';
 import './products.css';
+import armImg from '../assets/arm.png';
 
 const items = [
   { label: 'Home', href: '/' },
@@ -68,7 +69,7 @@ export default function Products() {
         </div>
         <div className="hero-right">
           <div className="hero-card">
-            <img src="https://github.com/SoulShadow8326/theseus/blob/main/src/assets/arm.png?raw=true" alt="arm" />
+            <img src={armImg} alt="arm" />
           </div>
         </div>
       </header>
