@@ -1,6 +1,6 @@
 :root{--pink:#DE3163;--bg:#181818;--text:#FFFFFF}
 .products-page{min-height:100vh;display:flex;flex-direction:column;background:var(--bg);color:var(--text)}
-.products-hero{display:flex;align-items:center;gap:3rem;padding:4rem 6rem;max-width:1400px;margin:0 auto;width:100%}
+.products-hero{display:flex;align-items:center;gap:3rem;padding:4rem 6rem;max-width:1400px;margin:0 auto;width:100%; padding-top: 15vh;}
 .products-hero .hero-left{flex:1;max-width:640px}
 .products-hero h1{font-family:Satoshi,Helvetica,Arial,sans-serif;font-weight:800;font-size:clamp(32px,6.5vw,72px);line-height:1;margin:0 0 1rem}
 .products-hero p{color:rgba(255,255,255,0.85);font-size:1.05rem;line-height:1.6;margin:0 0 2rem}
