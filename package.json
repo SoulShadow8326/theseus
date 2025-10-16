@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "gsap": "^3.13.0",
+    "lucide-react": "^0.545.0",
     "ogl": "^1.0.11",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-payment-inputs": "^1.2.0",
     "react-router-dom": "^6.30.1"
   },
   "devDependencies": {

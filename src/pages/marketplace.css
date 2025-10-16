@@ -9,10 +9,32 @@
 .product-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,0.25) }
 .product-media { height: 220px; background: #f4f4f6; display:flex; align-items:center; justify-content:center }
 .product-media img{ width:100%; height:100%; object-fit:cover; display:block }
-.product-body { padding: 1.25rem 1.5rem }
+.product-body { padding: 1.25rem 1.5rem; display:flex; flex-direction:column; gap:8px }
 .product-body h3 { margin: 0 0 0.5rem 0; color: var(--text) !important; font-weight: 800 !important; font-family: Satoshi;}
 .product-desc { margin: 0 0 1rem 0; color: rgba(0,0,0,0.65); font-weight: 800;}
 .product-price { font-weight:800 }
+
+.add-cart { margin-top: 12px; background: rgba(0,0,0,0.25); color: var(--text); border: 1px solid rgba(255,255,255,0.06); padding: 6px 8px; border-radius: 8px; cursor: pointer; align-self:flex-end }
+.add-cart:hover { background: rgba(255,255,255,0.04) }
+
+.market-hero-top { display:flex; align-items:center; justify-content:space-between; gap: 16px }
+.cart-button { background: var(--blue); color: white; border: none; padding: 12px 16px; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 1.2rem;}
+.cart-button:hover { opacity: 0.95 }
+button, .add-cart, .qty-btn, .cart-button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+}
+button:focus, .add-cart:focus, .qty-btn:focus, .cart-button:focus,
+button:focus-visible, .add-cart:focus-visible, .qty-btn:focus-visible, .cart-button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.qty-controls { display:flex; align-items:center; gap:6px; margin-top: 8px; align-self:flex-end }
+.qty-btn { width:30px; height:30px; border-radius:8px; border:none; background: rgba(0,0,0,0.08); color:var(--text); cursor:pointer; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:16px; line-height:1 }
+.qty-count { min-width:24px; height:30px; display:flex; align-items:center; justify-content:center; font-weight:800 }
 
 @media (max-width: 900px) {
   .product-grid { grid-template-columns: repeat(1, 1fr) }
