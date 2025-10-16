@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'
 import Nav from '../components/navbar';
 import './marketplace.css';
 import armImg from '../assets/arm.png';
@@ -37,6 +38,7 @@ const Marketplace = () => {
   }
 
   const cartCount = Object.values(cart).reduce((s, v) => s + v, 0)
+  const navigate = useNavigate()
 
   return (
     <div className="marketplace-page">
@@ -45,7 +47,7 @@ const Marketplace = () => {
         <div className="market-hero-inner">
           <div className="market-hero-top">
             <h1><span style={{ color: 'var(--pink)' }}>Marketplace</span></h1>
-            <button className="cart-button" aria-label="Cart">Cart {cartCount > 0 ? `(${cartCount})` : ''}</button>
+            <button className="cart-button" aria-label="Cart" onClick={() => cartCount > 0 && navigate('/checkout')} disabled={cartCount === 0}>Cart {cartCount > 0 ? `(${cartCount})` : ''}</button>
           </div>
         </div>
       </header>

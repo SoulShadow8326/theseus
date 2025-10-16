@@ -230,7 +230,7 @@ export default function Checkout() {
               </div>
               <div className="checkout-actions">
                 <button onClick={prev}>Back</button>
-                <button className="primary">Confirm Order</button>
+                <button className="primary" onClick={() => navigate('/orders')}>Confirm Order</button>
               </div>
             </div>
           )}
