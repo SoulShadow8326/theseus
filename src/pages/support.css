@@ -83,12 +83,13 @@
 }
 
 .support-main{ max-width:1100px; margin:2rem auto; }
-.topic-cards{ display:flex; gap:1.5rem; margin-bottom:2rem; justify-content:center; flex-wrap:wrap }
-.topic-card{ background:#fff; color:var(--bg); border-radius:8px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,0.15); flex:0 1 340px; max-width:360px }
+.topic-cards{ display:flex; gap:1.5rem; margin-bottom:2.25rem; justify-content:center; flex-wrap:wrap }
+.topic-card{ background: #0e0e0e; color:var(--text); border-radius:12px; overflow:hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.6); flex:0 1 340px; max-width:360px; border:1px solid rgba(255,255,255,0.03); transition: transform .18s ease, box-shadow .18s ease }
+.topic-card:hover{ transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.6) }
 .topic-card img{ width:100%; height:160px; object-fit:cover; display:block }
-.topic-card-body{ padding:1rem 1.25rem }
-.topic-card-body h3{ margin:0 0 0.4rem 0; font-size:1.25rem; color:var(--bg) }
-.topic-card-body p{ margin:0; color:rgba(0,0,0,0.65) }
+.topic-card-body{ padding:1.25rem 1.5rem }
+.topic-card-body h3{ margin:0 0 0.5rem 0; font-size:1.25rem; color:var(--pink); font-weight:700 }
+.topic-card-body p{ margin:0; color:rgba(255,255,255,0.75); line-height:1.35 }
 
 .support-links h2{ font-size:2.6rem; margin:0 0 2rem 0; }
 .support-columns{ display:flex; gap:3.5rem; justify-content:space-between; align-items:flex-start }
