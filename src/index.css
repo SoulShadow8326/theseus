@@ -20,6 +20,10 @@
 *{
   overscroll-behavior: none;
 }
+::selection {
+  background: var(--pink);
+  color: var(--text);
+}
 
 body {
   margin: 0;
