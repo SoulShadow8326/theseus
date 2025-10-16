@@ -2,6 +2,7 @@ import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl'
 import { useEffect, useRef } from 'react';
 import armImg from '../assets/arm.png';
 import logoImg from '../assets/logo.png';
+import revImg from '../assets/rev_logo.png';
 import './CircularGallery.css';
 
 function debounce(func, wait) {
@@ -289,7 +290,7 @@ class App {
       bend,
       textColor = '#ffffff',
       borderRadius = 0,
-      font = 'bold 30px Figtree',
+      font = 'bold 30px Helvetica',
       scrollSpeed = 2,
       scrollEase = 0.05
     } = {}
@@ -334,18 +335,18 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: armImg, text: 'Arm' },
-      { image: logoImg, text: 'Arm' },
-      { image: armImg, text: 'Arm' },
-      { image: logoImg, text: 'Arm' },
-      { image: armImg, text: 'Arm' },
-      { image: logoImg, text: 'Arm' },
-      { image: armImg, text: 'Arm' },
-      { image: logoImg, text: 'Arm' },
-      { image: armImg, text: 'Arm' },
-      { image: logoImg, text: 'Arm' },
-      { image: armImg, text: 'Arm' },
-      { image: logoImg, text: 'Arm' },
+      { image: armImg, text: 'A-001' },
+      { image: logoImg, text: '' },
+      { image: revImg, text: '' },
+      { image: logoImg, text: '' },
+      { image: revImg, text: '' },
+      { image: logoImg, text: '' },
+      { image: revImg, text: '' },
+      { image: logoImg, text: '' },
+      { image: revImg, text: '' },
+      { image: logoImg, text: '' },
+      { image: revImg, text: '' },
+      { image: logoImg, text: '' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);

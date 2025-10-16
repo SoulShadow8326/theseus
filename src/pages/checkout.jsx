@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { usePaymentInputs } from 'react-payment-inputs'
 import images from 'react-payment-inputs/images'
 import './checkout.css'
@@ -66,6 +67,8 @@ export default function Checkout() {
 
   const total = cartItems.reduce((s, it) => s + (Number(it.price) * (it.qty || 1)), 0)
 
+  const navigate = useNavigate()
+
   function next() {
     setStep(s => Math.min(3, s + 1))
   }
@@ -119,9 +122,10 @@ export default function Checkout() {
                   </div>
                 ))}
               </div>
-              <div className="checkout-actions">
-                <button onClick={next} className="primary">Continue to card</button>
-              </div>
+                <div className="checkout-actions">
+                  <button onClick={() => navigate('/marketplace')}>Back to marketplace</button>
+                  <button onClick={next} className="primary">Continue to card</button>
+                </div>
             </div>
           )}
 
