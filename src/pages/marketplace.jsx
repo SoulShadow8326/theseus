@@ -3,11 +3,13 @@ import { useNavigate } from 'react-router-dom'
 import Nav from '../components/navbar';
 import './marketplace.css';
 import armImg from '../assets/arm.png';
+import blackImg from '../assets/black_arm.png';
+import whiteImg from '../assets/white_arm.png';
 
 const products = [
-  { title: 'A-001', price: '$49', desc: 'An arm with superhuman efficiency.', img: armImg },
-  { title: 'Theseus Analytics', price: '$99', desc: 'Usage insights and dashboards', img: armImg },
-  { title: 'Theseus Integrations', price: '$149', desc: 'Connect to your stack', img: armImg },
+  { title: 'A-001', price: '$99', desc: 'An arm with superhuman efficiency.', img: armImg },
+  { title: 'Theseus Analytics', price: '$99', desc: 'Usage insights and dashboards', img: blackImg },
+  { title: 'Theseus Integrations', price: '$99', desc: 'Connect to your stack', img: whiteImg },
   { title: 'Theseus Core', price: '$49', desc: 'Core collaboration tools', img: armImg },
   { title: 'Theseus Analytics', price: '$99', desc: 'Usage insights and dashboards', img: armImg },
   { title: 'Theseus Integrations', price: '$149', desc: 'Connect to your stack', img: armImg },

@@ -11,7 +11,7 @@ export default function Checkout() {
   const [step, setStep] = useState(0)
 
   const sample = [
-    { title: 'A-001', price: 49, qty: 1, img: armImg }
+    { title: 'A-001', price: 99, qty: 1, img: armImg }
   ]
 
   const [cartItems, setCartItems] = useState([])

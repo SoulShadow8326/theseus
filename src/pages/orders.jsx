@@ -5,9 +5,9 @@ import Nav from '../components/navbar'
 
 export default function Orders() {
   const sample = [
-    { id: 'ORD-1001', date: '2025-10-01', total: 149.00, items: [{sku:'A-001', qty:1, price:49}], status: 'Processing' },
-    { id: 'ORD-1002', date: '2025-09-21', total: 98.00, items: [{sku:'A-001', qty:2, price:49}], status: 'Shipped' },
-    { id: 'ORD-1003', date: '2025-08-15', total: 49.00, items: [{sku:'A-001', qty:1, price:49}], status: 'Delivered' }
+    { id: 'ORD-1001', date: '2025-10-01', total: 99.00, items: [{sku:'A-001', qty:1, price:99}], status: 'Processing' },
+    { id: 'ORD-1002', date: '2025-09-21', total: 198.00, items: [{sku:'A-001', qty:2, price:198}], status: 'Shipped' },
+    { id: 'ORD-1003', date: '2025-08-15', total: 99.00, items: [{sku:'A-001', qty:1, price:99}], status: 'Delivered' }
   ]
 
   const [orders] = useState(sample)
