@@ -40,7 +40,7 @@ button:focus-visible, .add-cart:focus-visible, .qty-btn:focus-visible, .cart-but
 .qty-count { min-width:24px; height:30px; display:flex; align-items:center; justify-content:center; font-weight:800 }
 
 .visualize-line { display:flex; justify-content:flex-start; margin: 1.25rem 0; }
-.visualize-link { font-family: Satoshi; color: var(--pink); font-weight:700; cursor:pointer; text-decoration: none; padding: 6px 0; }
+.visualize-link { font-family: Satoshi; color: var(--text); font-weight:700; cursor:pointer; text-decoration: none; padding: 6px 0; }
 .visualize-link:hover, .visualize-link:focus { text-decoration: underline; outline: none }
 
 @media (max-width: 900px) {
