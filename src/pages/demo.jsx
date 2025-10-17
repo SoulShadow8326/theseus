@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Nav from '../components/navbar';
 import './demo.css';
-const armModel = new URL('../assets/arm_model.glb', import.meta.url).href;
+const armModel = new URL('../assets/2hisid.glb', import.meta.url).href;
 
 const Demo = () => {
   useEffect(() => {
